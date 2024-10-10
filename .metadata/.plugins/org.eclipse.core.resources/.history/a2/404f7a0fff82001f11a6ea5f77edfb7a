@@ -1,0 +1,20 @@
+/*
+ * AD5621.h
+ *
+ *  Created on: Oct 5, 2024
+ *      Author: erkan
+ */
+
+#ifndef INC_AD5621_H_
+#define INC_AD5621_H_
+
+
+void checkCommunication_AD5621(void);
+
+
+
+
+
+
+
+#endif /* INC_AD5621_H_ */

@@ -1,0 +1,27 @@
+/*
+ * AD5621.h
+ *
+ *  Created on: Oct 5, 2024
+ *      Author: erkan
+ */
+
+#ifndef INC_AD5621_H_
+#define INC_AD5621_H_
+
+
+typedef enum
+{
+	COM_ERROR = 0x00,
+	COM_READY = 0x01,
+}communication_status_e;
+
+
+communication_status_e checkCommunication_AD5621(SPI_HandleTypeDef *hspi);
+
+
+
+
+
+
+
+#endif /* INC_AD5621_H_ */

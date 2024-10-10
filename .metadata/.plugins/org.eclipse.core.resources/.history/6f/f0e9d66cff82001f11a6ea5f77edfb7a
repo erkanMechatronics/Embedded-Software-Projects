@@ -1,0 +1,29 @@
+/*
+ * AD5621.c
+ *
+ *  Created on: Oct 5, 2024
+ *      Author: erkan
+ */
+
+
+
+
+
+communication_status_e checkCommunication_AD5621(SPI_HandleTypeDef *hspi)
+{
+	HAL_SPI_StateTypeDef ckeckCom;
+
+	checkCom = HAL_SPI_GetState(hspi);
+	if(checkCom != HAL_SPI_STATE_READY)
+	{
+		return COM_ERROR;
+	}
+	else
+	{
+		return COM_READY;
+	}
+}
+
+
+
+
